@@ -1,0 +1,140 @@
+:root{
+    --cor-fundoprimario:white;
+    --cor-header:turquoise;
+    --cor-footer:rgb(29, 28, 28);
+}
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: var(--cor-header);
+    padding-top: 30px;
+}
+header .conteiner{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 881px ;
+    background-color:var(--cor-fundoprimario);
+    padding: 30px;
+}
+header .coluna-esquerda{
+    padding: 0px 35px;
+}
+.Foto{
+    border-radius: 100%;
+}
+main{
+    background: var(--cor-fundoprimario);
+}
+main .conteiner{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 881px ;
+    background-color: var(--cor-fundoprimario);
+    padding: 30px;
+}
+.linha{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.coluna{
+    flex-basis: 50%;
+    display: flex;
+}
+.coluna-direito{
+    flex-basis: 48%;
+    margin: 1px;
+    display: inline-block;
+}
+.coluna-esquerda{
+    flex-basis: 47%;
+    display: inline-block;
+}
+header .linha{
+    align-items: center;
+}
+main .coluna{
+    line-height: 1.5em;
+}
+main section{
+    border: 1px solid black;
+    padding: 20px;
+    margin: 0px 0 20px;
+    min-height: 220px;
+}
+footer{
+    display: block;
+    background-color:var(--cor-footer);
+}
+footer .Redes-Sociais ul li{
+    display: inline;
+    padding: 0 214px;
+}
+footer .img{
+    display: flex;
+    padding: 10px 210px 10px;
+    justify-content: center;
+    border-bottom: 0.5px solid white;
+}
+footer #insta{
+    border-radius: 35%;
+
+}
+footer #linkedin{
+    border-radius: 35%;
+}
+footer a{
+    color: cornsilk;
+}
+footer strong{
+    color: darkgrey;
+}
+footer .info{
+    padding: 10px;
+}
+.ativar-dark:checked ~.dark-mode{
+    --cor-fundoprimario: rgb(35 35 35);
+    --cor-header:rgb(64 64 64);
+    --cor-footer:rgb(29, 28, 28);
+    --cor-r:cornsilk;
+    --cor-strong:darkgrey;
+}
+.ativar-dark:checked ~.dark-mode header{
+    background-color: var(--cor-header);
+}
+.ativar-dark:checked ~.dark-mode header strong{
+    color: var(--cor-strong);
+}
+.ativar-dark:checked ~.dark-mode header li{
+    color:var(--cor-r) ;
+}
+.ativar-dark:checked ~.dark-mode main strong{
+    color:var(--cor-strong);
+}
+.ativar-dark:checked ~.dark-mode main li{
+    color: var(--cor-r);
+}
+.ativar-dark:checked ~.dark-mode header .conteiner{
+    background-color:var(--cor-fundoprimario);
+    
+}
+.ativar-dark:checked ~.dark-mode main{
+    background: var(--cor-fundoprimario);
+}
+.ativar-dark:checked ~.dark-mode main .conteiner{
+    background: var(--cor-fundoprimario);
+}
+.ativar-dark:checked ~.dark-mode footer{
+    background-color:var(--cor-footer);
+}
+.ativar-dark:checked ~.dark-mode main section{
+    border-color: white;
+}
